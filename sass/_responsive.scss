@@ -1,0 +1,351 @@
+@media only screen and (max-width: 992px) {
+ 	/* Header Style =================================== */
+	.navbar-collapse {
+		margin: 10px -15px 0;
+		box-shadow: none;
+		border-top: 1px solid #e7e7e7 !important;
+
+		&.collapse {
+			display: none!important;
+
+			&.in {
+			display: block!important;
+			}
+
+			&.collapsing {
+			overflow: hidden!important;
+			}
+		}
+	}
+	.navbar-nav {
+
+		&.navbar-right {
+			float: none!important;
+
+			li {
+				float: none;
+			}
+		}
+	}
+	.header {
+		
+		.navbar {
+ 
+			.navbar-nav {
+
+				li {
+					width: 150px;
+
+					&:after {
+						
+					}
+
+					&.active, &:hover {
+
+						&:after, &:before{
+							bottom: 0px;
+
+						}
+					}
+
+					a {
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		.header-top {
+
+			.phone-mail {
+
+				ul {
+					text-align: center;
+
+					li {
+
+						a {
+							padding-right: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-header{
+		float: none;
+	}
+	.navbar-toggle {
+    	margin: 0;
+        display: block;
+        border: 0;
+
+        &:hover {
+
+			.icon-bar {
+
+        		&:nth-child(1) {
+	        		-webkit-transform: translateY(-2px);
+	        		-moz-transform: translateY(-2px);
+	        		-ms-transform: translateY(-2px);
+	        		-o-transform: translateY(-2px);
+					transform: translateY(-2px);
+	        	}
+	        	&:nth-child(2) {
+	        		
+	        	}
+	        	&:nth-child(3) {		
+					-webkit-transform: translateY(2px);
+					-moz-transform: translateY(2px);
+					-ms-transform: translateY(2px);
+					-o-transform: translateY(2px);
+					transform: translateY(2px);
+	        	}
+	        }
+		}
+
+        &:hover, &:focus {
+        	background-color: transparent !important;
+
+        	&:before {
+				opacity: 1;
+				-webkit-transform: translateX(0);
+				-moz-transform: translateX(0);
+				-ms-transform: translateX(0);
+				-o-transform: translateX(0);
+				transform: translateX(0);
+        	}
+        }
+
+        &.in {
+
+        	.icon-bar {
+				-webkit-transition: -webkit-transform 150ms linear;
+				transition: -webkit-transform 150ms linear;
+				transition: transform 150ms linear;
+				transition: transform 150ms linear, -webkit-transform 150ms linear;
+
+				&:nth-child(1) {
+	        		-webkit-transform: translateY(8px);
+	        		-moz-transform: translateY(8px);
+	        		-ms-transform: translateY(8px);
+	        		-o-transform: translateY(8px);
+					transform: translateY(8px);
+
+					.inner {
+					    -webkit-transform: rotate(45deg);
+					    -moz-transform: rotate(45deg);
+					    -ms-transform: rotate(45deg);
+					    -o-transform: rotate(45deg);
+						transform: rotate(45deg);
+					}
+	        	}
+	        	&:nth-child(2) {
+	        		opacity: 0;
+	        	}
+	        	&:nth-child(3) {		
+					-webkit-transform: translateY(-8px);
+					-moz-transform: translateY(-8px);
+					-ms-transform: translateY(-8px);
+					-o-transform: translateY(-8px);
+					transform: translateY(-8px);
+
+					.inner {							
+					    -webkit-transform: rotate(-45deg);
+					    -moz-transform: rotate(-45deg);
+					    -ms-transform: rotate(-45deg);
+					    -o-transform: rotate(-45deg);
+					    transform: rotate(-45deg);
+					}
+	        	}
+			}
+        }
+
+        .icon-bar {
+        	width: 32px;
+		    margin-bottom: 6px;
+        	background-color: transparent !important;
+        	-webkit-transition: -webkit-transform 150ms linear 150ms;
+		    transition: -webkit-transform 150ms linear 150ms;
+		    transition: transform 150ms linear 150ms;
+		    transition: transform 150ms linear 150ms, -webkit-transform 150ms linear 150ms;
+
+		    .inner {
+			    width: 100%;
+			    height: 4px;
+		    	display: block;
+			    border-radius: 4px;
+			    background-color: $base;
+			    -webkit-transition: background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
+			    transition: background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
+			    transition: transform 150ms linear, background-color 150ms linear, opacity 0s linear 150ms;
+			    transition: transform 150ms linear, background-color 150ms linear, opacity 0s linear 150ms, -webkit-transform 150ms linear;
+		    }
+        }
+    }
+
+    .testimonials {
+    	.slick-next {
+			right: 0;
+    	}
+
+    	.slick-prev{
+    		left: -15px;
+    	}
+    }
+}
+@media Only screen and (max-width: 768px){
+	.align-center-v {
+		display: inherit;
+
+	}
+	.header {
+
+		.header-top {
+
+			.social-link {
+				text-align: center!important;
+
+				ul {
+
+					li {
+						a {
+							padding: 0 6px;
+
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.services {
+		padding: 0;
+	}
+
+	.work {
+		padding: 40px 0 0;
+	}
+
+	.work-list {
+		
+		.work-list-item {
+			padding: 40px;
+		}
+	}
+
+	.counter-up {
+		padding: 40px 0;
+
+		.counter {
+			font-size: 30px;
+		}
+
+		.col {
+			margin-bottom: 20px; 
+		}
+	}
+}
+@media Only screen and (max-width: 575px){
+	.col{
+		width: 100%!important;
+	}
+	.header {
+		.navbar {
+			.navbar-nav {
+				li{
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.banner {
+		.item {
+			text-align: center;
+
+			.jumbotron{
+				h1{
+					font-size: 25px;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+	.features {
+		padding: 15px 0 15px;
+
+		.feature-item {
+			padding: 20px 0;
+		}
+	}
+	.section-title {
+		.title {
+			font-size: 20px;
+		}
+	}
+
+	.services {
+
+		.service-item {
+			padding: 10px 0;
+		}
+	}
+
+	.work {
+
+		.container-fluid {
+			padding: 0;
+		}
+
+		.row {
+			.presentation {
+				height: 400px;
+			}
+		}
+	}
+	 
+}
+@media Only screen and (max-width: 480px){
+	.testimonials {
+		padding: 0 0px 30px;
+
+		.testimonial {
+			.item {
+				.description {
+					padding: 20px 10px 20px 20px;
+					line-height: 16px;
+
+					.quote {
+						&:before{
+							left: -17px;
+							top: 0;
+							font-size: 12px;
+						}
+					}
+				}
+
+				.client-profile {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+@media Only screen and (max-width: 380px){
+	.navbar-toggle{
+		padding-left: 0;
+    	padding-top: 17px;
+	}
+
+	.work {
+
+		.progress {
+
+			.progress-title {
+				top: -45px;
+			}
+
+		}
+	}
+}
